@@ -1,9 +1,15 @@
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from './globalStyle';
+import { lightMode } from "./theme";
 
 function App() {
   return (
-    <div className="App">
-      nanna
-    </div>
+    <ThemeProvider theme={lightMode}>
+      <GlobalStyle />
+      <>
+        nanana
+      </>
+    </ThemeProvider>
   );
 }
 
