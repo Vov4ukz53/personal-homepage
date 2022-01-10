@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as Brightness } from "../../images/icons/brightness.svg";
+import { ReactComponent as sun } from "./sun.svg";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -21,6 +21,10 @@ export const Text = styled.p`
     font-size: 12px;
     line-height: 1.3;
     margin: 0px 12px 0px 0px;
+
+    @media(max-width:${({ theme }) => theme.breakpoints.small}px){
+        display: none;
+    }
 `;
 
 export const SwitchBody = styled.span`
@@ -47,7 +51,7 @@ export const IconBody = styled.span`
     `}
 `;
 
-export const Icon = styled(Brightness)`
+export const Icon = styled(sun)`
     color: ${({ theme }) => theme.colors.icon};
 `;
 
