@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as checked } from "../../images/icons/checked.svg";
+import { ReactComponent as checked } from "./images/icons/checked.svg";
 
 export const Wrapper = styled.section`
     display: grid;
