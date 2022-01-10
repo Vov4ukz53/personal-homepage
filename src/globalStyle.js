@@ -13,8 +13,9 @@ const GlobalStyle = createGlobalStyle`
    body {
        font-family: 'Inter', sans-serif;
        font-size: 18px;
-       background-color: ${({ theme }) => theme.colors.background};
-       color: ${({ theme }) => theme.colors.mainTextColor};
+       background: ${({ theme }) => theme.colors.background};
+       color: ${({ theme }) => theme.colors.mainText};
+       transition: all .3s;
    }
 `;
 
