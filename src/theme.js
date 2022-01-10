@@ -16,8 +16,10 @@ export const lightMode = {
         icon: "#FFFFFF",
     },
     breakpoints: {
+        container: 1216,
         tablets: 992,
         mobile: 767,
+        small: 600,
     },
 };
 
@@ -39,7 +41,9 @@ export const darkMode = {
         icon: "#252525",              
     },
     breakpoints: {
+        container: 1216,
         tablets: 992,
         mobile: 767,
+        small: 600,
     },
 };
