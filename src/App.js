@@ -1,14 +1,17 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from './globalStyle';
-import { lightMode } from "./theme";
+import { darkMode, lightMode } from "./theme";
+import MainPage from "./MainPage";
+import { selectIsDarkTheme } from "./MainPage/themeSlice";
+import { useSelector } from "react-redux";
 
 function App() {
+  const isDarkTheme = useSelector(selectIsDarkTheme);
+
   return (
-    <ThemeProvider theme={lightMode}>
+    <ThemeProvider theme={isDarkTheme ? darkMode : lightMode}>
       <GlobalStyle />
-      <>
-        nanana
-      </>
+      <MainPage />
     </ThemeProvider>
   );
 }
