@@ -71,7 +71,7 @@ export const Title = styled.h1`
 export const Info = styled.p`
     font-size: 20px;
     line-height: 1.4;
-    max-width: 600px;
+    max-width: 640px;
     margin-bottom: 30px;
     margin-top: 0px;
 
