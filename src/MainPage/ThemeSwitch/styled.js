@@ -53,6 +53,7 @@ export const IconBody = styled.span`
 
 export const Icon = styled(sun)`
     color: ${({ theme }) => theme.colors.icon};
+    transition: color .3s;
 `;
 
 
