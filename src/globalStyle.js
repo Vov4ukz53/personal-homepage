@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
         transition: all .3s;
         padding-top: 115px;
         padding-bottom: 109px;
+        letter-spacing: 0.05em;
 
         @media(max-width:${({ theme }) => theme.breakpoints.container}px){
             padding-top: calc(20px + (115 - 20) * ((100vw - 320px) / (1216 - 320)));
