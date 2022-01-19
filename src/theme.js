@@ -2,7 +2,8 @@ export const lightMode = {
     colors: {
         background: "#FBFBFE",
         backgroundTile: "#FFFFFF",
-        borderTile: "#F1F2F4",
+        borderTile: "rgba(209, 213, 218, 0.3)",
+        hoverBorderTile: "#CDE0F7",
         shadowTile: "rgba(9, 10, 51, 0.02)",
         backgroundSwitch: "#E5E5E5",
         mainText: "#6E7E91",
@@ -14,6 +15,7 @@ export const lightMode = {
         focusButton: "#8CC2FF",
         selectedButton: "rgba(20, 70, 32, 0.2)",
         borderColor: "#F1F2F4",
+        nameRepository:"#0366D6",
         icon: "#FFFFFF",
     },
     breakpoints: {
@@ -29,6 +31,7 @@ export const darkMode = {
         background: "#252525",
         backgroundTile: "#313132",
         borderTile: "#414143",
+        hoverBorderTile: "#34659E",
         shadowTile: "rgba(9, 10, 51, 0.03)",
         backgroundSwitch: "#6E6E6E",
         mainText: "#FFFFFF",
@@ -40,6 +43,7 @@ export const darkMode = {
         focusButton: "#6D93BE",
         selectedButton: "rgba(20, 70, 32, 0.2)",
         borderColor: "#414143",
+        nameRepository:"#FFFFFF",
         icon: "#252525",              
     },
     breakpoints: {
