@@ -5,10 +5,10 @@ import {
   Title,
   SubTitle,
   Info,
-  Link,
   Letter,
   Icon,
 } from "./styled";
+import { LinkButton } from "../linkButton";
 import avatar from "./images/avatar.jpg";
 import manAndLaptopIcon from "./images/icons/man-and-laptop.png";
 
@@ -26,10 +26,13 @@ const AboutMe = () => (
         <Icon src={manAndLaptopIcon} />
         I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
       </Info>
-      <Link href="mailto:Vov4ukz53@gmail.com" title="Vov4ukz53@gmail.com">
+      <LinkButton
+        href="mailto:Vov4ukz53@gmail.com"
+        title="Vov4ukz53@gmail.com"
+      >
         <Letter />
         Hire Me
-      </Link >
+      </LinkButton >
     </Content>
   </Wrapper>
 );
