@@ -1,18 +1,30 @@
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { Container } from "./Container";
 import AboutMe from "./AboutMe";
 import { ThemeSwitch } from "./ThemeSwitch";
 import { Skills } from "./Skills";
 import { LearnNext } from "./LearnNext";
+import { Portfolio } from "./Portfolio";
+import { fetchRepositories } from "../MainPage/mainPageSlice";
 
-const MainPage = () => (
-  <Container>
-    <ThemeSwitch />
-    <AboutMe />
-    <Skills />
-    <LearnNext />
+const MainPage = () => {
+  const dispatch = useDispatch();
 
-  </Container>
-);
+  useEffect(() => {
+    dispatch(fetchRepositories());
+  });
+
+  return (
+    <Container>
+      <ThemeSwitch />
+      <AboutMe />
+      <Skills />
+      <LearnNext />
+      <Portfolio />
+    </Container>
+  );
+};
 
 export default MainPage;
 
