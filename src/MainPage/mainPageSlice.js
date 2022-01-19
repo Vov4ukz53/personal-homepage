@@ -1,11 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-// import { getRepositories } from "./getRepositories";
 
 const mainPageSlice = createSlice({
   name: "repositories",
   initialState: {
     repositories: [],
-    loading: true,
+    loading: false,
     error: false,
   },
   reducers: {
