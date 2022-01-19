@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Title = styled.h2`
     font-weight: 900;
@@ -14,7 +14,13 @@ export const Title = styled.h2`
     @media(max-width:${({ theme }) => theme.breakpoints.mobile}px){
         letter-spacing: 0px;
     }
+
+    ${({ portfolio }) => portfolio && css`
+        display: block;
+    `}
 `;
+
+
 
 export const Icon = styled.img`
     margin-left: 16px;
