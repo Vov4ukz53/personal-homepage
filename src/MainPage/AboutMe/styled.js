@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { ReactComponent as checked } from "./images/icons/checked.svg";
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.header`
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 66px;
     margin-top: -27px;
-    margin-bottom: 63px;
+    margin-bottom: 73px;
 
     @media(max-width:${({ theme }) => theme.breakpoints.container}px){
         grid-gap: calc(12px + (66 - 12) * ((100vw - 320px) / (1216 - 320)));
-        margin-bottom: calc(48px + (63 - 48) * ((100vw - 320px) / (1216 - 320)));
+        margin-bottom: calc(48px + (73 - 48) * ((100vw - 320px) / (1216 - 320)));
     }
 
     @media(max-width:${({ theme }) => theme.breakpoints.mobile}px){
