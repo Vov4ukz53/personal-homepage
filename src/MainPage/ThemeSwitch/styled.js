@@ -21,6 +21,7 @@ export const Text = styled.p`
     font-size: 12px;
     line-height: 1.3;
     margin: 0px 12px 0px 0px;
+    text-transform: uppercase;
 
     @media(max-width:${({ theme }) => theme.breakpoints.small}px){
         display: none;
