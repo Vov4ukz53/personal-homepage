@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
-import { Title } from "../title";
+import { Title } from "../../common/title";
+import { GithubIcon } from "../../common/GithubIcon";
 import {
   Wrapper,
-  GithubIcon,
   Header,
   SubTitle,
   Body,
