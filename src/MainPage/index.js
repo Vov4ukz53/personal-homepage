@@ -6,6 +6,7 @@ import { ThemeSwitch } from "./ThemeSwitch";
 import { Skills } from "./Skills";
 import { LearnNext } from "./LearnNext";
 import { Portfolio } from "./Portfolio";
+import { LetsTalk } from "./LetsTalk";
 import { fetchRepositories } from "../MainPage/mainPageSlice";
 
 const MainPage = () => {
@@ -13,7 +14,7 @@ const MainPage = () => {
 
   useEffect(() => {
     dispatch(fetchRepositories());
-  });
+  }, [dispatch]);
 
   return (
     <Container>
@@ -22,6 +23,7 @@ const MainPage = () => {
       <Skills />
       <LearnNext />
       <Portfolio />
+      <LetsTalk />
     </Container>
   );
 };
