@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
         font-size: 18px;
         background: ${({ theme }) => theme.colors.background};
         color: ${({ theme }) => theme.colors.mainText};
-        transition: all .3s;
+        transition: background .3s;
         padding-top: 115px;
         padding-bottom: 109px;
         letter-spacing: 0.05em;
