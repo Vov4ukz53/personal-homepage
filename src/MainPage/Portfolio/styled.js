@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as github } from "../images/git-hub-icon.svg";
+import { ReactComponent as github } from "./images/git-hub-icon.svg";
 
 export const Wrapper = styled.section`
     margin-bottom: 120px;
