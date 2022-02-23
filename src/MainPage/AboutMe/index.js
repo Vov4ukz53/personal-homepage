@@ -11,6 +11,7 @@ import {
 import { LinkButton } from "../linkButton";
 import avatar from "./images/avatar.jpg";
 import manAndLaptopIcon from "./images/icons/man-and-laptop.png";
+import { email } from "../links";
 
 const AboutMe = () => (
   <Wrapper>
@@ -27,14 +28,13 @@ const AboutMe = () => (
         I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
       </Info>
       <LinkButton
-        href="mailto:Vov4ukz53@gmail.com"
-        title="Vov4ukz53@gmail.com"
+        href={`mailto:${email}`}
+        title={email}
       >
-        <Letter />
-        Hire Me
+        <Letter /> Hire Me
       </LinkButton >
     </Content>
-  </Wrapper>
+  </Wrapper >
 );
 
 export default AboutMe;
