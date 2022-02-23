@@ -1,9 +1,9 @@
 import { email } from "../links";
 import { SocialNetworks } from "./SocialNetworks";
-import { Email, Icon, Info, Title, Wrapper } from "./styled";
+import { Email, Icon, Info, Title, Footer } from "./styled";
 
 export const LetsTalk = () => (
-  <Wrapper>
+  <Footer>
     <Title>Let’s talk!</Title>
     <Email href={`mailto:${email}`}>
       {email}
@@ -13,5 +13,5 @@ export const LetsTalk = () => (
       <Icon/>
     </Info>
     <SocialNetworks />
-  </Wrapper>
+  </Footer>
 );
