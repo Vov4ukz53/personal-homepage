@@ -45,7 +45,7 @@ export const InstagramIcon = styled(instagramIcon)`
   }
 `;
 
-export const LindkedInIcon = styled(linkedInIcon)`
+export const LinkedInIcon = styled(linkedInIcon)`
   @media(max-width:${({ theme }) => theme.breakpoints.container}px){
     width: calc(32px + (48 - 32) * ((100vw - 320px) / (1216 - 320)));
   }

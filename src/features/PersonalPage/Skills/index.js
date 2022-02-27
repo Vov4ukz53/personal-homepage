@@ -1,5 +1,5 @@
-import { Section } from "../Section";
-import { Icon, Title } from "../../common/title";
+import { Section } from "../../../common/Section";
+import { Icon, Title } from "../../../common/title";
 import { List } from "./List";
 import icon from "./icon.png";
 

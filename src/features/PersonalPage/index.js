@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Container } from "./Container";
+import { Container } from "../../common/Container";
 import AboutMe from "./AboutMe";
-import { ThemeSwitch } from "./ThemeSwitch";
+import { ThemeSwitch } from "../../common/ThemeSwitch";
 import { Skills } from "./Skills";
 import { LearnNext } from "./LearnNext";
 import { Portfolio } from "./Portfolio";
 import { LetsTalk } from "./LetsTalk";
-import { fetchRepositories } from "../MainPage/mainPageSlice";
+import { fetchRepositories } from "../../personalPageSlice";
 
 const MainPage = () => {
   const dispatch = useDispatch();

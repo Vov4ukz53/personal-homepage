@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const mainPageSlice = createSlice({
+const personalPageSlice = createSlice({
   name: "repositories",
   initialState: {
     repositories: [],
@@ -26,7 +26,7 @@ export const {
   fetchRepositories,
   setRepositories,
   repositoriesRequestFailed,
-} = mainPageSlice.actions;
+} = personalPageSlice.actions;
 
 const selectMainPageState = state => state.repositories;
 
@@ -47,4 +47,4 @@ export const selectMyRepositories = state => {
   );
 };
 
-export default mainPageSlice.reducer;
+export default personalPageSlice.reducer;

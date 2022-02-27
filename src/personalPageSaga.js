@@ -1,5 +1,5 @@
 import { call, put, delay, takeLatest } from "redux-saga/effects";
-import { fetchRepositories, setRepositories, repositoriesRequestFailed } from "./mainPageSlice";
+import { fetchRepositories, setRepositories, repositoriesRequestFailed } from "./personalPageSlice";
 import { getRepositories } from "./getRepositories";
 
 function* fetchRepositoriesHandler() {
@@ -14,8 +14,8 @@ function* fetchRepositoriesHandler() {
   }
 };
 
-function* mainPageSaga() {
+function* personalPageSaga() {
   yield takeLatest(fetchRepositories.type, fetchRepositoriesHandler);
 };
 
-export default mainPageSaga;
+export default personalPageSaga;
