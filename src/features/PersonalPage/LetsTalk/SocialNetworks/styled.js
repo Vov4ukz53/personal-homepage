@@ -27,6 +27,7 @@ export const Item = styled.li`
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.title};
   transition: color .3s;
+  display: flex;
 
   &:hover{
     color: ${({ theme }) => theme.colors.backgroundButton};

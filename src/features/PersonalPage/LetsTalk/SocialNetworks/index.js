@@ -1,4 +1,5 @@
 import { GithubIcon } from "../../../../common/GithubIcon";
+import { instagram, facebook, github, linkedin } from "../../../../links";
 import {
   Wrapper,
   Item,
@@ -9,32 +10,36 @@ import {
 } from "./styled";
 
 export const SocialNetworks = () => {
-  const icons = [<InstagramIcon />, <FacebookIcon />, <LinkedInIcon />, <GithubIcon />];
+  const icons = [
+    {
+      icon: <GithubIcon />,
+      link: github
+    },
+    {
+      icon: <FacebookIcon />,
+      link: facebook
+    },
+    {
+      icon: <LinkedInIcon />,
+      link: linkedin
+    },
+    {
+      icon: <InstagramIcon />,
+      link: instagram,
+    },
+  ];
 
   return (
     <Wrapper>
-      {icons.map((icon, index) => {
+      {icons.map((item, index) => {
         return (
           <Item key={index}>
-            <Link href="https://www.google.com/">
-              {icon}
+            <Link target="_blank" href={item.link}>
+              {item.icon}
             </Link>
           </Item>
         )
       })}
-
-      {/* <Item>
-        <Link href="https://www.google.com/"><GithubIcon social="true" /></Link>
-      </Item>
-      <Item>
-        <Link href="https://www.google.com/"><FacebookIcon /></Link>
-      </Item>
-      <Item>
-        <Link href="https://www.google.com/"><LinkedInIcon /></Link>
-      </Item>
-      <Item>
-        <Link href="https://www.google.com/"><InstagramIcon /></Link>
-      </Item> */}
     </Wrapper>
-  );
+  )
 };

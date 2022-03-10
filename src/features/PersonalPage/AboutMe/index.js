@@ -11,7 +11,6 @@ import {
 import { LinkButton } from "../linkButton";
 import avatar from "./images/avatar.jpg";
 import manAndLaptopIcon from "./images/icons/man-and-laptop.png";
-import { email } from "../links";
 
 const AboutMe = () => (
   <Wrapper>
@@ -25,12 +24,9 @@ const AboutMe = () => (
       </Title>
       <Info>
         <Icon src={manAndLaptopIcon} />
-        I’m a passionate Frontend Developer in love with React, currently looking for new job opportunities.
+        I'm a junior Frontend Developer working with React, searching and looking forward to new possibilities and propositions.
       </Info>
-      <LinkButton
-        href={`mailto:${email}`}
-        title={email}
-      >
+      <LinkButton href="#letsTalk">
         <Letter /> Hire Me
       </LinkButton >
     </Content>

@@ -60,7 +60,6 @@ export const Tile = styled.div`
 `;
 
 export const Name = styled.p`
-  flex: 1 1 auto;
   font-weight: bold;
   font-size: 24px;
   margin-top: 0px;
@@ -99,10 +98,9 @@ export const Paragraph = styled.p`
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.backgroundButton};
   text-decoration: none;
-  transition: border-bottom .3s;
 
   &:hover{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundButton};
   }
 
   @media(max-width:${({ theme }) => theme.breakpoints.container}px){

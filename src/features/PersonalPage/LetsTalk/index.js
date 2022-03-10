@@ -1,16 +1,16 @@
-import { email } from "../links";
+import { email } from "../../../links";
 import { SocialNetworks } from "./SocialNetworks";
 import { Email, Icon, Info, Title, Footer } from "./styled";
 
 export const LetsTalk = () => (
-  <Footer>
+  <Footer id="letsTalk">
     <Title>Let’s talk!</Title>
     <Email href={`mailto:${email}`}>
       {email}
     </Email>
     <Info>
-      I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me
-      <Icon/>
+      I've always been interested in programming. Receantly I've taken courses, gained new skills and knowledge. And now I'm ready to start my career and improve my skills more and more.
+      <Icon />
     </Info>
     <SocialNetworks />
   </Footer>

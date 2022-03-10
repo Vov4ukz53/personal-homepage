@@ -15,18 +15,19 @@ export const LinkButton = styled.a`
     transition: all .3s;
     border: 1px solid ${({ theme }) => theme.colors.borderButton};
     border-radius: 4px;
+    border: none;
     cursor: pointer;
 
-    ${({gitHub})=>gitHub && css`
+    ${({ gitHub }) => gitHub && css`
         margin: 0 auto;
     `}
 
     &:hover{
         box-shadow:
-        2px -2px 0px ${({ theme }) => theme.colors.onHoverButton},
-        -2px 2px 0px ${({ theme }) => theme.colors.onHoverButton},
+        1px 1px 5px 3px ${({ theme }) => theme.colors.onHoverButton};
+        /* -2px 2px 0px ${({ theme }) => theme.colors.onHoverButton},
         2px 2px 0px ${({ theme }) => theme.colors.onHoverButton},
-        -2px -2px 0px ${({ theme }) => theme.colors.onHoverButton};
+        -2px -2px 0px ${({ theme }) => theme.colors.onHoverButton}; */
     }
 
     &:active{

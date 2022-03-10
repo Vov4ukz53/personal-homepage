@@ -3,6 +3,7 @@ import { Loading } from "./Loading";
 import { Error } from "./Error";
 import { Title } from "../../../common/title";
 import { GithubIcon } from "../../../common/GithubIcon";
+import { linkDemo } from "../../../links";
 import {
   Wrapper,
   Header,
@@ -23,7 +24,6 @@ export const Portfolio = () => {
   const loading = useSelector(selectLoading);
   const error = useSelector(selectError);
   const myRepositories = useSelector(selectMyRepositories);
-  const linkDemo = "https://vov4ukz53.github.io/";
 
   return (
     <Wrapper>
@@ -40,23 +40,23 @@ export const Portfolio = () => {
               {myRepositories.map((repository) => (
                 <Tile key={repository.id}>
                   <Name>{repository.name}</Name>
-                  <Paragraph>info</Paragraph>
+                  <Paragraph>{repository.description}</Paragraph>
                   <Paragraph demo>Demo:{" "}
-                    <Link href={`${linkDemo}${repository.name}/`}
-                      title={`${linkDemo}${repository.name}/`}
+                    <Link
+                      href={`${linkDemo}${repository.name}`}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      https://link.demo.com
+                      {`${linkDemo}${repository.name}`}
                     </Link>
                   </Paragraph>
                   <Paragraph>Code:{" "}
-                    <Link href={repository.html_url}
-                      title={repository.html_url}
+                    <Link
+                      href={repository.html_url}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      https://link.code.com
+                      {repository.html_url}
                     </Link>
                   </Paragraph>
                 </Tile>
