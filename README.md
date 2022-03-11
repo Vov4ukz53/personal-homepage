@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Personal homepage
+This is a page where you can find all important information about me and my portfolio with added projects.
+
+## Demo
 
 Here you can see my [demo](https://vov4ukz53.github.io/personal-homepage/)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://https://github.com/Vov4ukz53/personal-homepage).
 
