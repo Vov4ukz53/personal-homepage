@@ -7,11 +7,11 @@ import personalPageSaga from "./personalPageSaga";
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
-    reducer:{
-        theme: themeReducer,
-        repositories: personalPageReducer,
-    },
-    middleware: [sagaMiddleware],
+  reducer:{
+    theme: themeReducer,
+    repositories: personalPageReducer,
+  },
+  middleware: [sagaMiddleware],
 });
 
 sagaMiddleware.run(personalPageSaga);

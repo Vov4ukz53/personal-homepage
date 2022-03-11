@@ -44,7 +44,7 @@ export const selectMyRepositories = state => {
 
   return selectRepositories(state).filter(({ id }) =>
     myRepositoriesIds.includes(id)
-  );
+  )
 };
 
 export default personalPageSlice.reducer;
