@@ -5,6 +5,20 @@ This is a page where you can find all important information about me and my port
 
 Here you can see my [demo](https://vov4ukz53.github.io/personal-homepage/)
 
+## Used Technologies:
+- HTML5
+- Flexbox
+- Grid
+- CSS
+- JavaScript/ES6+ Features
+- Create React App
+- React + Redux
+- Redux-Saga
+- Styled Components
+
+## How to use
+![how to use](https://i.ibb.co/RHpRMBj/cv.gif)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://https://github.com/Vov4ukz53/personal-homepage).
