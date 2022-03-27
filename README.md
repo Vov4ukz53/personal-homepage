@@ -17,7 +17,7 @@ Here you can see my [demo](https://vov4ukz53.github.io/personal-homepage/)
 - Styled Components
 
 ## How to use
-![how to use](https://i.ibb.co/prcsp9j/cv1.gif)
+![how to use](https://i.ibb.co/gZwnwpG/cv.gif)
 
 ## Getting Started with Create React App
 
