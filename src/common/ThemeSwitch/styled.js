@@ -23,7 +23,7 @@ export const Text = styled.p`
   margin: 0px 12px 0px 0px;
   text-transform: uppercase;
 
-  @media(max-width:${({ theme }) => theme.breakpoints.small}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.small}px){
     display: none;
   }
 `;
