@@ -8,7 +8,7 @@ import {
   Letter,
   Icon,
 } from "./styled";
-import { LinkButton } from "../linkButton";
+import { LinkButton } from "../LinkButton";
 import avatar from "./images/avatar.jpg";
 import manAndLaptopIcon from "./images/icons/man-and-laptop.png";
 

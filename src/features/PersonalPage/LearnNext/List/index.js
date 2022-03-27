@@ -1,13 +1,10 @@
-import { Wrapper, Item } from "../../list";
+import { Wrapper, Item } from "../../List";
+import { learnNextList } from "./learnNextList";
 
-export const List = () => {
-  const learnNext = ["JS classes", "React Context", "TypeScript"];
-
-  return (
-    <Wrapper>
-      {learnNext.map((item, index) => {
-        return <Item key={index}>{item}</Item>
-      })}
-    </Wrapper>
-  )
-};
+export const List = () => (
+  <Wrapper>
+    {learnNextList.map((item, index) => {
+      return <Item key={index}>{item}</Item>
+    })}
+  </Wrapper>
+);

@@ -1,0 +1,1 @@
+export const learnNextList = ["JS classes", "React Context", "TypeScript"];

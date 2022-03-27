@@ -15,7 +15,7 @@ export const Title = styled.h4`
   margin-bottom: 24px;
   color: ${({ theme }) => theme.colors.mainText};
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     margin-bottom: calc(12px + (24 - 12) * ((100vw - 320px) / (1216 - 320)));
   }
 `;
@@ -33,7 +33,7 @@ export const Email = styled.a`
     color: ${({ theme }) => theme.colors.backgroundButton};
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1216 - 320)));
     margin-bottom: calc(12px + (24 - 12) * ((100vw - 320px) / (1216 - 320)));
   }

@@ -20,8 +20,6 @@ export const Title = styled.h2`
   `}
 `;
 
-
-
 export const Icon = styled.img`
   margin-left: 16px;
 

@@ -1,4 +1,4 @@
-import { email } from "../../../links";
+import { email } from "../../../email";
 import { SocialNetworks } from "./SocialNetworks";
 import { Email, Icon, Info, Title, Footer } from "./styled";
 

@@ -1,6 +1,6 @@
 import { LoadingIcon } from "./styled";
-import { StyledWrapper } from "../wrapper";
-import { Info } from "../info";
+import { StyledWrapper } from "../Wrapper";
+import { Info } from "../Info";
 
 export const Loading = () => (
   <StyledWrapper>

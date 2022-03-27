@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as sun } from "./sun.svg";
+import { ReactComponent as Sun } from "./sun.svg";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -52,7 +52,7 @@ export const IconBody = styled.span`
   `}
 `;
 
-export const Icon = styled(sun)`
+export const Icon = styled(Sun)`
   color: ${({ theme }) => theme.colors.icon};
   transition: color .3s;
 `;

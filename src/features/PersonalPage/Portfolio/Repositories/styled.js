@@ -5,11 +5,11 @@ export const Body = styled.div`
   grid-gap: 32px;
   grid-template-columns: 1fr 1fr;
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     gap: calc(16px + (32 - 16) * ((100vw - 320px) / (1216 - 320)));
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.mobile}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
     grid-template-columns: 1fr;
   }
 `;
@@ -29,7 +29,7 @@ export const Tile = styled.div`
     border: 6px solid ${({ theme }) => theme.colors.hoverBorderTile};
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     padding: calc(24px + (56 - 24) * ((100vw - 320px) / (1216 - 320)));
   }
 `;
@@ -45,7 +45,7 @@ export const Name = styled.p`
     text-transform: uppercase;
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1216 - 320)));
     margin-bottom: calc(16px + (24 - 16) * ((100vw - 320px) / (1216 - 320)));
   }
@@ -64,7 +64,7 @@ export const Paragraph = styled.p`
     margin-bottom: 0px;
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1216 - 320)));
     margin-bottom: calc(16px + (24 - 16) * ((100vw - 320px) / (1216 - 320)));
   }
@@ -78,7 +78,7 @@ export const Link = styled.a`
     border-bottom: 1px solid ${({ theme }) => theme.colors.backgroundButton};
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1216 - 320)));
   }
 `;

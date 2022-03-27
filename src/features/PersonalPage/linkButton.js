@@ -31,7 +31,7 @@ export const LinkButton = styled.a`
     box-shadow: inset 0px 2px 0px ${({ theme }) => theme.colors.selectedButton};
   }
 
-  @media(max-width:${({ theme }) => theme.breakpoints.container}px){
+  @media (max-width:${({ theme }) => theme.breakpoints.container}px){
     font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1216 - 320)));
     width: calc(138px + (154 - 138) * ((100vw - 320px) / (1216 - 320)));
   }

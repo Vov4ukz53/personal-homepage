@@ -1,4 +1,14 @@
+const common = {
+  breakpoints: {
+    container: 1216,
+    tablets: 992,
+    mobile: 767,
+    small: 600,
+  },
+};
+
 export const lightMode = {
+  ...common,
   colors: {
     background: "#FBFBFE",
     backgroundTile: "#FFFFFF",
@@ -9,24 +19,19 @@ export const lightMode = {
     mainText: "#6E7E91",
     title: "#252525",
     backgroundButton: "#0366D6",
-    borderButton: "#4187D7",  
+    borderButton: "#4187D7",
     textButton: "#FFFFFF",
     onHoverButton: "#8CC2FF",
     focusButton: "#8CC2FF",
     selectedButton: "rgba(20, 70, 32, 0.2)",
     borderColor: "#F1F2F4",
-    nameRepository:"#0366D6",
+    nameRepository: "#0366D6",
     icon: "#FFFFFF",
-  },
-  breakpoints: {
-    container: 1216,
-    tablets: 992,
-    mobile: 767,
-    small: 600,
   },
 };
 
 export const darkMode = {
+  ...common,
   colors: {
     background: "#252525",
     backgroundTile: "#313132",
@@ -37,19 +42,13 @@ export const darkMode = {
     mainText: "#FFFFFF",
     title: "#FFFFFF",
     backgroundButton: "#2188FF",
-    borderButton: "#569FF4", 
+    borderButton: "#569FF4",
     textButton: "#FFFFFF",
     onHoverButton: "#6D93BE",
     focusButton: "#6D93BE",
     selectedButton: "rgba(20, 70, 32, 0.2)",
     borderColor: "#414143",
-    nameRepository:"#FFFFFF",
-    icon: "#252525",              
-  },
-  breakpoints: {
-    container: 1216,
-    tablets: 992,
-    mobile: 767,
-    small: 600,
+    nameRepository: "#FFFFFF",
+    icon: "#252525",
   },
 };

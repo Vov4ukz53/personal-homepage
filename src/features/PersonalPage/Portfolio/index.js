@@ -1,8 +1,9 @@
 import { useSelector } from "react-redux";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
-import { Title } from "../../../common/title";
+import { Title } from "../../../common/Title";
 import { GithubIcon } from "../../../common/GithubIcon";
+import { Repositories } from "./Repositories";
 import {
   Wrapper,
   Header,
@@ -12,7 +13,6 @@ import {
   selectError,
   selectLoading,
 } from "../../../personalPageSlice";
-import { Repositories } from "./Repositories";
 
 export const Portfolio = () => {
   const loading = useSelector(selectLoading);
@@ -25,7 +25,6 @@ export const Portfolio = () => {
         <Title portfolio>Portfolio</Title>
         <SubTitle>My recent projects</SubTitle>
       </Header>
-
       {loading ? <Loading />
         : error ? <Error />
           : <Repositories />

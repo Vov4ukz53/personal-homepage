@@ -1,13 +1,10 @@
-import { Wrapper, Item } from "../../list";
+import { Wrapper, Item } from "../../List";
+import { skillset } from "./skillset";
 
-export const List = () => {
-  const skillset = ["Semantic & accessible HTML", "React Router", "Promises, Async/Await", "Responsive Web Design", "Redux-Saga", "GitHub Pull Requests & Review", "Teamwork", "Redux (Toolkit)", "Trello", "Markdown", "React Hooks", "Immutability", "Error handling", "NPM", "CSS BEM convention", "Working with API (fetch, axios)", "React", "SCSS", "CSS Grid", "JavaScript: ES6+", "Git", "CSS Flexbox"];
-
-  return (
-    <Wrapper>
-      {skillset.map((skill, index) => {
-        return <Item key={index}>{skill}</Item>
-      })}
-    </Wrapper>
-  )
-};
+export const List = () => (
+  <Wrapper>
+    {skillset.map((skill) =>
+      <Item key={skill}>{skill}</Item>
+    )}
+  </Wrapper>
+);

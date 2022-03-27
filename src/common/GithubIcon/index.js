@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as github } from "./gitHub.svg";
+import { ReactComponent as Github } from "./gitHub.svg";
 
-export const GithubIcon = styled(github)`
+export const GithubIcon = styled(Github)`
   width: 48px;
   height: 48px;
   margin-bottom: 0px;
