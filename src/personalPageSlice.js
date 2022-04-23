@@ -37,7 +37,7 @@ export const selectError = state => selectMainPageState(state).error;
 export const selectMyRepositories = state => {
   const myRepositoriesIds = [
     424564004,
-    444539005,
+    484464982,
     423117095,
     468023215
   ];

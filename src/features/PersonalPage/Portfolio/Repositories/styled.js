@@ -55,6 +55,7 @@ export const Paragraph = styled.p`
   margin-top: 0px;
   margin-bottom: 24px;
   line-height: 1.4;
+  flex: 1 1 auto;
 
   ${({ demo }) => demo && css`
     margin-bottom: 8px;
