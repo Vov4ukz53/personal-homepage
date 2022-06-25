@@ -39,7 +39,8 @@ export const selectMyRepositories = state => {
     424564004,
     484464982,
     423117095,
-    468023215
+    468023215,
+    489629341
   ];
 
   return selectRepositories(state).filter(({ id }) =>
