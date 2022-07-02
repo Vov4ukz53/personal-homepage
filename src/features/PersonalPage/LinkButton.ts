@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 interface LinkButton {
-  gitHub: string;
+  gitHub?: string;
 };
 
 export const LinkButton = styled.a<LinkButton>`
