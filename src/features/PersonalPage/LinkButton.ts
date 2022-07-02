@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 
-export const LinkButton = styled.a`
+interface LinkButton {
+  gitHub: string;
+};
+
+export const LinkButton = styled.a<LinkButton>`
   width: 154px;
   padding: 11px 0px;
   font-size: 20px;
