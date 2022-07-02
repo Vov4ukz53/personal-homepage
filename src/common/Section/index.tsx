@@ -1,11 +1,11 @@
 import { Wrapper, Header } from "./styled";
 
-interface Section {
-  title: string;
+interface SectionProps {
+  title: string | JSX.Element;
   body: JSX.Element;
 };
 
-export const Section = ({ title, body }: Section) => (
+export const Section = ({ title, body }: SectionProps) => (
   <Wrapper>
     <Header>
       {title}
