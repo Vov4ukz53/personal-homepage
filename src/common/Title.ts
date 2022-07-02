@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 
-export const Title = styled.h2`
+interface Title {
+  portfolio: string;
+};
+
+export const Title = styled.h2<Title>`
   font-weight: 900;
   font-size: 30px;
   color: ${({ theme }) => theme.colors.title};
