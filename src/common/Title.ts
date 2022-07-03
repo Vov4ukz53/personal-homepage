@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 interface TitleProps {
-  portfolio?: string;
+  portfolio?: boolean;
 };
 
 export const Title = styled.h2<TitleProps>`
