@@ -1,5 +1,9 @@
 import styled, { css } from "styled-components";
 
+interface ParagraphProps {
+  demo: boolean;
+};
+
 export const Body = styled.div`
   display: grid;
   grid-gap: 32px;
@@ -51,7 +55,7 @@ export const Name = styled.p`
   }
 `;
 
-export const Paragraph = styled.p`
+export const Paragraph = styled.p<ParagraphProps>`
   margin-top: 0px;
   margin-bottom: 24px;
   line-height: 1.4;
