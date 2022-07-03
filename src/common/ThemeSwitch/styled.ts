@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 import { ReactComponent as Sun } from "./sun.svg";
 
+interface IconBodyProps {
+  active: boolean;
+}
+
 export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -37,7 +41,7 @@ export const SwitchBody = styled.span`
   transition: background .3s;
 `;
 
-export const IconBody = styled.span`
+export const IconBody = styled.span<IconBodyProps>`
   display: flex;
   align-items: center;
   justify-content: center;
