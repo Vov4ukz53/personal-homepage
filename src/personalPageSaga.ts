@@ -1,6 +1,10 @@
 import { call, put, delay, takeLatest } from "redux-saga/effects";
-import { fetchRepositories, setRepositories, repositoriesRequestFailed } from "./personalPageSlice";
 import { getRepositories } from "./getRepositories";
+import {
+  fetchRepositories,
+  setRepositories,
+  repositoriesRequestFailed
+} from "./personalPageSlice";
 
 function* fetchRepositoriesHandler() {
   try {
