@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 
-export const Info = styled.p`
+interface InfoProps {
+  error?: boolean;
+};
+
+export const Info = styled.p<InfoProps>`
   font-size: 20px;
   margin-bottom: 48px;
   color: ${({ theme }) => theme.colors.title};
