@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { ReactComponent as Github } from "./gitHub.svg";
 
 interface GithubIconProps {
-  portfolio?: boolean;
+  portfolio?: boolean | string;
 };
 
 export const GithubIcon = styled(Github) <GithubIconProps>`
