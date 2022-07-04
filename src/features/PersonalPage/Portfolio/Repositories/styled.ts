@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 interface ParagraphProps {
-  demo: boolean;
+  demo?: boolean;
 };
 
 export const Body = styled.div`
