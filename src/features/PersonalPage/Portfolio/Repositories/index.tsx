@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import { selectMyRepositories } from "../../../../personalPageSlice";
-import { linkDemo } from "../../../../links";
+import { selectMyRepositories } from "../../../../core/personalPageSlice";
+import { linkDemo } from "../../../PersonalPage/links";
 import {
   Body,
   Tile,

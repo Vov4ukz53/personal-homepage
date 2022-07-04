@@ -1,5 +1,5 @@
 import { GithubIcon } from "../../../../common/GithubIcon";
-import { instagram, facebook, github, linkedin } from "../../../../links";
+import { instagram, facebook, github, linkedin } from "../../../PersonalPage/links";
 import { FacebookIcon, LinkedInIcon, InstagramIcon } from "./styled";
 
 interface Iicons {

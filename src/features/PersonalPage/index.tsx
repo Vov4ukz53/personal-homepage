@@ -7,7 +7,7 @@ import { Skills } from "./Skills";
 import { LearnNext } from "./LearnNext";
 import { Portfolio } from "./Portfolio";
 import { LetsTalk } from "./LetsTalk";
-import { fetchRepositories } from "../../personalPageSlice";
+import { fetchRepositories } from "../../core/personalPageSlice";
 
 const MainPage = () => {
   const dispatch = useDispatch();

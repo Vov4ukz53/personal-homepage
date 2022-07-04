@@ -2,7 +2,7 @@ import { StyledWrapper } from "../Wrapper";
 import { Info } from "../Info";
 import { LinkButton } from "../../LinkButton";
 import { ErrorIcon, ErrorTitle } from "./styled";
-import { github } from "../../../../links";
+import { github } from "../../../PersonalPage/links";
 
 export const Error = () => (
   <StyledWrapper>

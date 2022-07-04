@@ -12,7 +12,7 @@ import {
 import {
   selectError,
   selectLoading,
-} from "../../../personalPageSlice";
+} from "../../../core/personalPageSlice";
 
 export const Portfolio = () => {
   const loading = useSelector(selectLoading);
