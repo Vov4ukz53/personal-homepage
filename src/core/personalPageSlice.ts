@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "./App/store";
+import { myRepositoriesIds } from "./myRepositoriesIds";
 
 interface Repository {
   id: number;
@@ -52,14 +53,6 @@ export const selectLoading = (state: RootState) => selectMainPageState(state).lo
 export const selectError = (state: RootState) => selectMainPageState(state).error;
 
 export const selectMyRepositories = (state: RootState) => {
-  const myRepositoriesIds = [
-    424564004,
-    484464982,
-    423117095,
-    468023215,
-    489629341
-  ];
-
   return selectRepositories(state).filter(({ id }) =>
     myRepositoriesIds.includes(id)
   )
