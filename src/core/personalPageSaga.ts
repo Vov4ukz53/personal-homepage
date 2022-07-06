@@ -1,11 +1,15 @@
 import { call, put, delay, takeLatest } from "redux-saga/effects";
-import { fetchRepositories, setRepositories, repositoriesRequestFailed } from "./personalPageSlice";
 import { getRepositories } from "./getRepositories";
+import {
+  fetchRepositories,
+  setRepositories,
+  repositoriesRequestFailed
+} from "./personalPageSlice";
 
 function* fetchRepositoriesHandler() {
   try {
     yield delay(1000);
-    const repositories = yield call(getRepositories);
+    const repositories: [] = yield call(getRepositories);
     yield put(setRepositories(repositories));
   }
   catch (error) {

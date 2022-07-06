@@ -1,3 +1,5 @@
+import { DefaultTheme } from "styled-components";
+
 const common = {
   breakpoints: {
     container: 1216,
@@ -7,7 +9,7 @@ const common = {
   },
 };
 
-export const lightMode = {
+export const lightMode: DefaultTheme = {
   ...common,
   colors: {
     background: "#FBFBFE",
@@ -30,7 +32,7 @@ export const lightMode = {
   },
 };
 
-export const darkMode = {
+export const darkMode: DefaultTheme = {
   ...common,
   colors: {
     background: "#252525",

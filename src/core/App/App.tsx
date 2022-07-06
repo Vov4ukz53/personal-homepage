@@ -1,12 +1,12 @@
 import { ThemeProvider } from "styled-components";
-import { useSelector } from "react-redux";
+import { useAppSelector } from "./hooks";
 import GlobalStyle from './globalStyle';
 import { darkMode, lightMode } from "./theme";
-import PersonalPage from "./features/PersonalPage";
-import { selectIsDarkTheme } from "./common/ThemeSwitch/themeSlice";
+import PersonalPage from "../../features/PersonalPage";
+import { selectIsDarkTheme } from "../../common/ThemeSwitch/themeSlice";
 
 function App() {
-  const isDarkTheme = useSelector(selectIsDarkTheme);
+  const isDarkTheme = useAppSelector(selectIsDarkTheme);
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkMode : lightMode}>
