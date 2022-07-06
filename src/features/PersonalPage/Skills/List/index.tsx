@@ -3,8 +3,8 @@ import { skillset } from "./skillset";
 
 export const List = () => (
   <Wrapper>
-    {skillset.map((skill) =>
-      <Item key={skill}>{skill}</Item>
+    {skillset.map((skill, index) =>
+      <Item key={index}>{skill}</Item>
     )}
   </Wrapper>
 );
