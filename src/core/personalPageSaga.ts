@@ -9,7 +9,7 @@ import {
 function* fetchRepositoriesHandler() {
   try {
     yield delay(1000);
-    const repositories = yield call(getRepositories);
+    const repositories: [] = yield call(getRepositories);
     yield put(setRepositories(repositories));
   }
   catch (error) {
