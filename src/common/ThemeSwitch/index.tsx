@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useAppSelector, useAppDispatch } from "../../core/App/hooks";
 import { selectIsDarkTheme, toggleTheme } from "./themeSlice";
 import {
   Wrapper,
@@ -10,8 +10,8 @@ import {
 } from "./styled";
 
 export const ThemeSwitch = () => {
-  const isDarkTheme = useSelector(selectIsDarkTheme);
-  const dispatch = useDispatch();
+  const isDarkTheme = useAppSelector(selectIsDarkTheme);
+  const dispatch = useAppDispatch();
 
   return (
     <Wrapper>

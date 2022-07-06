@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useAppSelector } from "../../../core/App/hooks";
 import { Loading } from "./Loading";
 import { Error } from "./Error";
 import { Title } from "../../../common/Title";
@@ -15,8 +15,8 @@ import {
 } from "../../../core/personalPageSlice";
 
 export const Portfolio = () => {
-  const loading = useSelector(selectLoading);
-  const error = useSelector(selectError);
+  const loading = useAppSelector(selectLoading);
+  const error = useAppSelector(selectError);
 
   return (
     <Wrapper>

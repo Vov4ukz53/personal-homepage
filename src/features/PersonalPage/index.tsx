@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from "../../core/App/hooks";
 import { Container } from "../../common/Container";
 import AboutMe from "./AboutMe";
 import { ThemeSwitch } from "../../common/ThemeSwitch";
@@ -10,7 +10,7 @@ import { LetsTalk } from "./LetsTalk";
 import { fetchRepositories } from "../../core/personalPageSlice";
 
 const MainPage = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   useEffect(() => {
     dispatch(fetchRepositories());

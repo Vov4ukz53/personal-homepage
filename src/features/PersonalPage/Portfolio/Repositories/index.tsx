@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux";
+import { useAppSelector } from "../../../../core/App/hooks";
 import { selectMyRepositories } from "../../../../core/personalPageSlice";
 import { linkDemo } from "../../../PersonalPage/links";
 import {
@@ -10,7 +10,7 @@ import {
 } from "./styled";
 
 export const Repositories = () => {
-  const myRepositories = useSelector(selectMyRepositories);
+  const myRepositories = useAppSelector(selectMyRepositories);
 
   return (
     <Body>
