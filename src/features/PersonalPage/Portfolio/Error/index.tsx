@@ -1,3 +1,4 @@
+import React from "react";
 import { StyledWrapper } from "../Wrapper";
 import { Info } from "../Info";
 import { LinkButton } from "../../LinkButton";

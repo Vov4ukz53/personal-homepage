@@ -1,3 +1,4 @@
+import React from "react";
 import { ThemeProvider } from "styled-components";
 import { useAppSelector } from "./hooks";
 import GlobalStyle from './globalStyle';

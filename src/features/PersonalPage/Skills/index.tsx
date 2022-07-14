@@ -1,3 +1,4 @@
+import React from "react";
 import { Section } from "../../../common/Section";
 import { Icon, Title } from "../../../common/Title";
 import { List } from "./List";

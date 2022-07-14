@@ -1,3 +1,4 @@
+import React from "react";
 import { Wrapper, Header } from "./styled";
 
 interface SectionProps {
