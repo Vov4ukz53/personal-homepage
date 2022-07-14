@@ -3,7 +3,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "./App/store";
 import { myRepositoriesIds } from "./myRepositoriesIds";
 
-interface Repository {
+export interface Repository {
   id: number;
   name: string;
   description: string;
