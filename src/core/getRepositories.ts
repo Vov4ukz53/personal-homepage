@@ -6,4 +6,3 @@ export const getRepositories = async () => {
 
   return response.data;
 };
-
