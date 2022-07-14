@@ -15,6 +15,7 @@ Here you can see my [demo](https://vov4ukz53.github.io/personal-homepage/)
 - React + Redux
 - Redux-Saga
 - Styled Components
+- TypeScript
 
 ## How to use
 ![how to use](https://i.ibb.co/gZwnwpG/cv.gif)
