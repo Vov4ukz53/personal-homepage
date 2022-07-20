@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppSelector, useAppDispatch } from "../../core/App/hooks";
 import { selectIsDarkTheme, toggleTheme } from "./themeSlice";
 import {

@@ -1,4 +1,3 @@
-import React from "react";
 import { Wrapper, Item } from "../../List";
 import { skillset } from "./skillset";
 
