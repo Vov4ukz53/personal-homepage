@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useAppDispatch } from "../../core/App/hooks";
 import { Container } from "../../common/Container";
 import AboutMe from "./AboutMe";

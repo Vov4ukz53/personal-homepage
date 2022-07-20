@@ -1,4 +1,3 @@
-import React from "react";
 import { LoadingIcon } from "./styled";
 import { StyledWrapper } from "../Wrapper";
 import { Info } from "../Info";

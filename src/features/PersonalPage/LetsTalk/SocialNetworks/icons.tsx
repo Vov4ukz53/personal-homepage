@@ -1,4 +1,3 @@
-import React from "react";
 import { GithubIcon } from "../../../../common/GithubIcon";
 import { instagram, facebook, github, linkedin } from "../../../PersonalPage/links";
 import { FacebookIcon, LinkedInIcon, InstagramIcon } from "./styled";

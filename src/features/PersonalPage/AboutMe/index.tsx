@@ -1,4 +1,3 @@
-import React from "react";
 import { LinkButton } from "../LinkButton";
 import avatar from "./images/avatar.jpg";
 import manAndLaptopIcon from "./images/icons/man-and-laptop.png";

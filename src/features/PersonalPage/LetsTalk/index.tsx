@@ -1,4 +1,3 @@
-import React from "react";
 import { email } from "./email";
 import { SocialNetworks } from "./SocialNetworks";
 import { Email, Icon, Info, Title, Footer } from "./styled";
