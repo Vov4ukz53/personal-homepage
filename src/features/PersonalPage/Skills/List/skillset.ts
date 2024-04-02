@@ -20,5 +20,7 @@ export const skillset = [
   "CSS Grid",
   "JavaScript: ES6+",
   "Git",
-  "CSS Flexbox"
+  "CSS Flexbox",
+  "CMS Wordpress",
+  "MySQL"
 ];
