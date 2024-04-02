@@ -23,8 +23,7 @@ const AboutMe = () => (
         Volodymyr Bronevych
       </Title>
       <Info>
-        <Icon src={manAndLaptopIcon} />
-        I'm a junior Frontend Developer working with React, searching and looking forward to new possibilities and propositions.
+        I am a young but ambitious Frontend Developer with almost two years of experience. I am ready to actively learn and grow professionally, open to new challenges and implementing my skills and knowledge in various projects to achieve high results. I am eager to join a dynamically growing team and cooperate on interesting projects.
       </Info>
       <LinkButton href="#letsTalk">
         <Letter /> Hire Me
