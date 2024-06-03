@@ -22,5 +22,6 @@ export const skillset = [
   "Git",
   "CSS Flexbox",
   "CMS Wordpress",
-  "MySQL"
+  "MySQL",
+  "TypeScript"
 ];

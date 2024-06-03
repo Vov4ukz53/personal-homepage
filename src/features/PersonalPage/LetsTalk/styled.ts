@@ -34,7 +34,7 @@ export const Email = styled.a`
   }
 
   @media (max-width:${({ theme }) => theme.breakpoints.container}px){
-    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1216 - 320)));
+    font-size: calc(16px + (32 - 18) * ((100vw - 320px) / (1216 - 320)));
     margin-bottom: calc(12px + (24 - 12) * ((100vw - 320px) / (1216 - 320)));
   }
 `;

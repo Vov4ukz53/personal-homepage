@@ -1,1 +1,1 @@
-export const learnNextList = ["JS classes", "React Context", "TypeScript"];
+export const learnNextList = ["Next.js", "Unit Testing"];
